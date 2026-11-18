@@ -60,7 +60,7 @@ Release notes state the signing and notarization status of each download. Unsign
 - **Save locally** stores one review in this app's profile; saving again replaces that copy. Edits are not saved automatically. Export JSON for portable backups or to keep more than one review.
 - No analytics, telemetry, cloud synchronization or automatic uploads. Website and evidence links open in your default browser. Unknown evidence destinations require confirmation.
 
-Share links are readable, encoded snapshots, **not encrypted**. **Share review** lets you choose whether to include the project name, written context and evidence sources. Assessment states, exclusions and creator-reported counts remain in the snapshot. Review the preview before copying a link. Closing an unsaved workspace can lose edits; save or export first. Opening a share link replaces the current workspace.
+Share links are readable, encoded snapshots, **not encrypted**. **Share review** lets you choose whether to include the project name, written context and evidence sources. Assessment states, exclusions and creator-reported counts remain in the snapshot. Review the preview before copying a link. Save or export before closing the app or using **Open share link**. Opening a link replaces the current workspace and can discard unsaved edits; it does not overwrite your saved local review.
 
 ## Run from source
 
