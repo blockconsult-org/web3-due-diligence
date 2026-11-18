@@ -4,7 +4,7 @@
 
 Review evidence, expose unknowns and organize due diligence questions. A focused, offline desktop workspace from [Block Consult](https://www.blockconsult.org), available in English and German.
 
-[![Build](https://github.com/blockconsult-org/web3-due-diligence/actions/workflows/release.yml/badge.svg)](https://github.com/blockconsult-org/web3-due-diligence/actions) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/blockconsult-org/web3-due-diligence)](https://github.com/blockconsult-org/web3-due-diligence/releases/latest) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) · [Platform builds](https://github.com/blockconsult-org/web3-due-diligence/actions/workflows/release.yml)
 
 **[Download for macOS or Windows](https://github.com/blockconsult-org/web3-due-diligence/releases/latest)** · [Use in your browser](https://www.blockconsult.org/tools/web3-due-diligence) · [Report an issue](https://github.com/blockconsult-org/web3-due-diligence/issues)
 
