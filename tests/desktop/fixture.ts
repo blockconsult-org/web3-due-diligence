@@ -1,0 +1,1 @@
+import { makeSnapshot, encodeSnapshot } from '../../tools/web3-due-diligence/codec'; export const shareHash = (model: any) => encodeSnapshot(makeSnapshot(model, { projectName: true, notes: true, evidence: true }));
