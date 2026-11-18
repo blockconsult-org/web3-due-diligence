@@ -1,6 +1,6 @@
 {
   "name": "@blockconsult/web3-due-diligence",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Review evidence, expose unknowns and organize due diligence questions.",
   "author": "Block Consult GmbH",

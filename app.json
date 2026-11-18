@@ -3,7 +3,7 @@
   "name": "Web3 Due Diligence Scorecard",
   "nameDe": "Web3-Due-Diligence-Scorecard",
   "description": "Review evidence, expose unknowns and organize due diligence questions.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "appId": "org.blockconsult.web3duediligence",
   "publicPath": "/tools/web3-due-diligence",
   "repository": "https://github.com/blockconsult-org/web3-due-diligence",
