@@ -1,14 +1,45 @@
-<p align="left"><img src="public/icon.png" width="64" alt="Block Consult" /></p>
+<a href="https://www.blockconsult.org">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public/blockconsult-logo.png">
+    <img src="public/blockconsult-logo-light.png" alt="Block Consult" width="280">
+  </picture>
+</a>
 
 # Web3 Due Diligence Scorecard
 
-Review evidence, expose unknowns and organize due diligence questions. A focused, offline desktop workspace from [Block Consult](https://www.blockconsult.org), available in English and German.
+Review a Web3 project through 24 checks across six areas, from team accountability and contract controls to token distribution and governance. Record your assessment, dated sources and unresolved concerns, then prepare an evidence inventory and questions for the next review conversation.
+
+An offline desktop tool from [Block Consult](https://www.blockconsult.org), available in English and German. For managing multiple cases, research and saved reports, see the separate [Block Consult DD workbench](https://github.com/blockconsult-org/block-consult-dd).
 
 [![Latest release](https://img.shields.io/github/v/release/blockconsult-org/web3-due-diligence)](https://github.com/blockconsult-org/web3-due-diligence/releases/latest) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) · [Platform builds](https://github.com/blockconsult-org/web3-due-diligence/actions/workflows/release.yml)
 
 **[Download for macOS or Windows](https://github.com/blockconsult-org/web3-due-diligence/releases/latest)** · [Use in your browser](https://www.blockconsult.org/tools/web3-due-diligence) · [Report an issue](https://github.com/blockconsult-org/web3-due-diligence/issues)
 
-![Web3 Due Diligence Scorecard workspace](docs/screenshot.png)
+![Web3 Due Diligence Scorecard in dark mode, with assessment fields and live evidence coverage](docs/screenshot.png)
+
+The assessment workspace keeps the current check and live findings together.
+
+## What you can do
+
+- Review 24 checks across team, contracts, audits, token distribution, governance and traction. Mark each as supported, a concern, unknown or not applicable.
+- Attach source URLs, evidence dates, notes and your own source-review status. Excluded checks require a reason.
+- Inspect dated evidence coverage, critical concerns and unresolved checks separately. The report includes an evidence inventory, risk register and prioritized follow-up questions.
+- Save one review locally, move the full review between devices with JSON, export a PNG or PDF, or share a read-only snapshot with selected text and evidence fields.
+
+Coverage measures documentation, not safety. The app does not fetch evidence, inspect contracts or independently verify a claim; a supported answer still needs a dated source and a recorded source review.
+
+## Get started
+
+1. Choose **Harbor Commons · fictional** under **Start with a review** to explore an example, or choose **Blank review** for your own project.
+2. Enter the project and reviewer details. Select a review area, assess its checks and record the evidence behind each answer.
+3. Open **Findings & report** to review concerns, evidence coverage and questions before proceeding.
+4. Choose **Save locally** before closing. Use **Files & local data** for JSON and report exports, or **Share review** to preview a public snapshot.
+
+## Screenshots
+
+![Harbor Commons example report in light mode, showing 18 dated sources, one critical concern and seven unresolved checks](docs/screenshots/example.png)
+
+The fictional Harbor Commons report keeps its critical concern visible alongside evidence coverage. Example sources and project details are invented; they are not an assessment of a real project.
 
 ## Download and install
 
@@ -20,22 +51,24 @@ Review evidence, expose unknowns and organize due diligence questions. A focused
 
 Release notes state the signing and notarization status of each download. Unsigned Windows releases may show a publisher warning. macOS requires macOS 13 or later. Check `SHA256SUMS.txt` against the downloaded file using `shasum -a 256` (macOS) or `Get-FileHash -Algorithm SHA256` (PowerShell). Download only from this repository's Releases page.
 
-## A private workspace
+## Your data
 
 - Calculations and editing work without an internet connection, account or API key.
 - English/German UI, light/dark themes, keyboard controls and resizable layouts.
 - Existing JSON models and browser share links remain compatible. Use **Open share link** to inspect a shared scenario locally.
 - Exports use a native file-save dialog. **File → Save report as PDF** writes a local PDF.
-- Drafts stay in this app's local profile; JSON exports are portable backups. Draft behavior follows the original tool (see the tool's save controls).
+- **Save locally** stores one review in this app's profile; saving again replaces that copy. Edits are not saved automatically. Export JSON for portable backups or to keep more than one review.
 - No analytics, telemetry, cloud synchronization or automatic uploads. Website and evidence links open in your default browser. Unknown evidence destinations require confirmation.
 
-Share links are readable, encoded snapshots, **not encrypted**. Review the sharing preview and optional inclusion of authored text before copying one. Closing an unsaved workspace can lose edits; save or export first. Opening a share link replaces the current workspace.
+Share links are readable, encoded snapshots, **not encrypted**. **Share review** lets you choose whether to include the project name, written context and evidence sources. Assessment states, exclusions and creator-reported counts remain in the snapshot. Review the preview before copying a link. Closing an unsaved workspace can lose edits; save or export first. Opening a share link replaces the current workspace.
 
-## Develop
+## Run from source
 
 Install Node.js 24 or newer, then:
 
 ```sh
+git clone https://github.com/blockconsult-org/web3-due-diligence.git
+cd web3-due-diligence
 npm ci
 npm run build
 npm start
@@ -59,14 +92,14 @@ npm run dist -- --win --x64       # on Windows
 | `tests/` | Calculation regressions and real desktop integration checks |
 | `.github/workflows/release.yml` | Tests and platform builds; draft releases for version tags |
 
-The original pure model code is preserved. The desktop adaptation changes navigation, share-link origins, local resources and native export handling. Source baseline: `1acdf7a290ef4d54e0b882c9d1b8c2bde79c8f9e`. No website server, portal, client data, credentials or provider integration is included.
-
 ## Release and maintenance
 
-See [release instructions](docs/RELEASING.md), [security policy](SECURITY.md) and [contribution guide](CONTRIBUTING.md). Releases are manual downloads; the app does not silently update. Keep the Electron runtime current when maintaining a fork.
+See the [release instructions](docs/RELEASING.md) for packaging and publishing. Releases are manual downloads; the app does not silently update. Keep the Electron runtime current when maintaining a fork.
 
-These tools support planning and discussion. Results depend on the supplied assumptions and the documented model limitations; they are not a prediction or professional advice.
+This is a manual review aid, not an audit or investment recommendation. Source accuracy and the significance of each finding require professional judgement. Fixed follow-up priorities are not probabilities or estimates of financial loss.
 
-## License
+## Contributing and license
 
-[MIT](LICENSE) · Copyright © 2026 Block Consult GmbH. Names and logos remain Block Consult trademarks.
+Read the [contribution guide](CONTRIBUTING.md) before opening a pull request. Report vulnerabilities through the process in the [security policy](SECURITY.md).
+
+[MIT](LICENSE) · Copyright © 2026 Block Consult GmbH. The license covers the code; it does not grant rights to use Block Consult’s name or logo as an endorsement.
